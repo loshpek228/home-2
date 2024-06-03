@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import {incrementNum,decrementNum, resetNum,setText,five,minus} from "./redux/reducer"
+import {incrementNum,decrementNum, resetNum,setText,five,minus, minusNum, fiveNum} from "./redux/reducer"
 import { useSelector } from "react-redux";
 import { useState } from "react";
 
@@ -30,12 +30,12 @@ const Buttons = () =>{
     
 
 <button onClick={()=>{
-            dispatch(five())
+            dispatch(fiveNum())
         }}>+5</button>
 
         
 <button onClick={()=>{
-            dispatch(minus())
+            dispatch(minusNum())
         }}>-5</button>
 
 
